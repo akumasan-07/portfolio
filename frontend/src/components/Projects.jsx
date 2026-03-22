@@ -4,7 +4,9 @@ import {projectData} from '../projectData'
 
 const Projects = () => {
   return (
-    <div id='projects' className='mx-auto max-w-6xl p-4 sm:p-10 text-white flex flex-col gap-10 sm:gap-16 items-center justify-center'>
+    <div id='projects' className='mt-10 mx-auto max-w-6xl p-4 sm:p-10 text-white flex flex-col gap-10 sm:gap-16 items-center justify-center'>
+      
+      <div></div>
 
       <motion.h1
       initial={{opacity:0, y:20}}

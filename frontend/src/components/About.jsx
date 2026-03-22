@@ -21,9 +21,9 @@ const About = () => {
             >
                 <span className='px-2 py-1 text-white bg-zinc-800 rounded-full text-xs md:text-sm'>Open to hire</span>
 
-                <h1 className='text-5xl md:text-6xl lg:text-7xl font-semibold text-center md:text-left bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 text-transparent bg-clip-text'>Ankur Kumar Verma</h1>
+                <h1 className='text-5xl md:text-6xl lg:text-7xl font-semibold text-center md:text-left bg-linear-to-r from-blue-600 via-sky-500 to-blue-400 text-transparent bg-clip-text'>Ankur Kumar Verma</h1>
 
-                <h3 className='text-xl md:text-2xl lg:text-3xl font-light text-center md:text-left bg-gradient-to-r from-blue-400 via-sky-400 to-blue-600 text-transparent bg-clip-text'>Web Developer</h3>
+                <h3 className='text-xl md:text-2xl lg:text-3xl font-light text-center md:text-left bg-linear-to-r from-blue-400 via-sky-400 to-blue-600 text-transparent bg-clip-text'>Web Developer</h3>
 
                 <p className='text-sm text-slate-400 text-center md:text-left text-pretty'></p>
 

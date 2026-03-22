@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <header className='top-0 w-full fixed backdrop-blur-md bg-black/30 border-b border-gray-700 border-opacity-20 z-50'>
       <nav className='max-w-7xl mx-auto py-6 px-6 lg:px-32 flex items-center justify-between text-white'>
-        <a href="#about" className='text-xl md:text-2xl font-semibold bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 text-transparent bg-clip-text hover:scale-110 transition-all duration-300'>
+        <a href="#about" className='text-xl md:text-2xl font-semibold bg-linear-to-r from-blue-600 via-sky-500 to-blue-400 text-transparent bg-clip-text hover:scale-110 transition-all duration-300'>
           Ankur 
         </a>
 
