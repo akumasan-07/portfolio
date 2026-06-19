@@ -13,7 +13,7 @@ const Projects = () => {
       whileInView={{opacity:1, y:0}}
       viewport={{once:true}}
       transition={{duration:0.8}}
-      className='text-4xl sm:text-6xl'
+      className='text-4xl sm:text-6xl py-2 font-bold text-transparent bg-clip-text bg-linear-to-r from-blue-600 via-sky-500 to-blue-400'
       >My Projects</motion.h1>
 
       <motion.div
@@ -21,11 +21,11 @@ const Projects = () => {
       whileInView={{opacity:1, x:0}}
       viewport={{once:true}}
       transition={{duration:0.8, delay:0.4}}
-      className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full'
+      className='grid grid-cols-1 md:grid-cols-2 gap-6 w-full'
       >
 
         {projectData.map((project) => (
-          <a href={project.link} key={project.id} target='_blank' className='flex flex-col rounded-xl overflow-hidden cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-800'>
+          <a href={project.link} key={project.id} target='_blank' rel="noopener noreferrer" className='flex flex-col rounded-xl overflow-hidden cursor-pointer transition-all duration-300 hover:scale-102 hover:shadow-2xl hover:shadow-blue-800'>
             <img src={project.image} className='hover:scale-105 transition-transform duration-300' alt="" />
 
             <div className='flex flex-col gap-3 bg-gray-900 p-5 transition-colors duration-300 hover:bg-gray-800 grow'>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import {BiMenu} from 'react-icons/bi'
+import {BiMenu, BiX} from 'react-icons/bi'
+import { motion } from 'framer-motion'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,6 +17,9 @@ const Navbar = () => {
             <a href="#about">About</a>
           </li>
           <li className='opacity-70 hover:opacity-100 transition-opacity duration-300'>
+            <a href="#skills">Skills</a>
+          </li>
+          <li className='opacity-70 hover:opacity-100 transition-opacity duration-300'>
             <a href="#projects">Projects</a>
           </li>
           <li className='opacity-70 hover:opacity-100 transition-opacity duration-300'>
@@ -25,14 +29,29 @@ const Navbar = () => {
 
         {/* for small screens */}
         <button className='md:hidden' onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          <BiMenu className='text-3xl'></BiMenu>
+          {isMenuOpen ? (
+            <BiX className="text-3xl" />
+          ) : (
+            <BiMenu className="text-3xl" />
+          )}
         </button>
 
         { isMenuOpen && (
-          <ul className='md:hidden absolute top-16 left-0 right-0 bg-black/90 border-b  border-gray-800 py-8 text-center space-y-5'>
+          <motion.ul
+            initial={{opacity: 0, y: -20}}
+            animate={{opacity:1 , y:0}}
+            exit={{opacity:0, y:-20}}
+            transition={{duration: 0.3}} 
+            className='md:hidden absolute top-16 left-0 right-0 bg-black/90 border-b  border-gray-800 py-8 text-center space-y-5'
+          >
             <li className='group px-10 opacity-80 hover:opacity-100 transition-opacity'>
               <a href="#about" onClick={() => setIsMenuOpen(false)}>
                 <span className='text-lg '>About</span>
+              </a>
+            </li>
+            <li className='group px-10 opacity-80 hover:opacity-100 transition-opacity'>
+              <a href="#skills" onClick={() => setIsMenuOpen(false)}>
+                <span className='text-lg '>Skills</span>
               </a>
             </li>
             <li className='group px-10 opacity-80 hover:opacity-100 transition-opacity'>
@@ -46,7 +65,7 @@ const Navbar = () => {
               </a>
             </li>
 
-          </ul>
+          </motion.ul>
         )}
 
       </nav>

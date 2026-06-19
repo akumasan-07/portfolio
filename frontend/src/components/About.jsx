@@ -4,7 +4,7 @@ import { BiLogoGithub, BiLogoLinkedin, BiLogoGmail } from 'react-icons/bi'
 
 const About = () => {
   return (
-    <div className='mx-auto max-w-6xl w-full min-h-screen p-4 md:p-8 lg:p-28 flex items-center justify-center' id='about'>
+    <div className='mx-auto pt-24 md:pt-0 max-w-6xl w-full min-h-screen p-4 md:p-8 lg:p-28 flex items-center justify-center' id='about'>
         <motion.div
         initial={{opacity:0, y:50}}
         whileInView={{opacity:1, y:0}}
@@ -19,26 +19,34 @@ const About = () => {
             transition={{duration:0.8, delay:0.2}}
             className='flex flex-col items-center md:items-start justify-center gap-3'
             >
-                <span className='px-2 py-1 text-white bg-zinc-800 rounded-full text-xs md:text-sm'>Open to hire</span>
+                <span className='px-2 py-1 text-white bg-zinc-800 rounded-full text-xs md:text-sm'>Open to Opportunities</span>
 
-                <h1 className='text-5xl md:text-6xl lg:text-7xl font-semibold text-center md:text-left bg-linear-to-r from-blue-600 via-sky-500 to-blue-400 text-transparent bg-clip-text'>Ankur Kumar Verma</h1>
+                <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-center md:text-left bg-linear-to-r from-blue-600 via-sky-500 to-blue-400 text-transparent bg-clip-text'>Ankur Kumar Verma</h1>
 
                 <h3 className='text-xl md:text-2xl lg:text-3xl font-light text-center md:text-left bg-linear-to-r from-blue-400 via-sky-400 to-blue-600 text-transparent bg-clip-text'>Web Developer</h3>
 
-                <p className='text-sm text-slate-400 text-center md:text-left text-pretty'></p>
+                <p className='max-w-xl text-sm text-slate-400 text-center md:text-left text-pretty'>
+                  I'm a Computer Science undergraduate at IIIT Sonepat with a strong interest in full-stack web development. I build scalable and responsive applications using React, Node.js, Express, and MongoDB, and enjoy turning ideas into practical solutions. Currently, I'm focused on strengthening my software engineering skills while exploring modern web technologies and system design.
+                </p>
 
                 <div className='flex gap-5 mt-3'>
 
-                  <BiLogoGithub className='text-2xl md:text-3xl text-white cursor-pointer hover:scale-110 hover:text-indigo-500 hover:rotate-12 transition-all duration-300 ease-in-out'></BiLogoGithub>
+                  <a href="https://github.com/akumasan-07" target='_blank' rel='noopener noreferrer'>
+                    <BiLogoGithub className='text-2xl md:text-3xl text-white cursor-pointer hover:scale-110 hover:text-indigo-500 hover:rotate-12 transition-all duration-300 ease-in-out'></BiLogoGithub>
+                  </a>
 
-                  <BiLogoLinkedin className='text-2xl md:text-3xl text-white cursor-pointer hover:scale-110 hover:text-blue-500 hover:-rotate-12 transition-all duration-300 ease-in-out'></BiLogoLinkedin>
+                  <a href="https://www.linkedin.com/in/ankur-kumar-verma-49398028a/" target='_blank' rel='noopener noreferrer'>
+                    <BiLogoLinkedin className='text-2xl md:text-3xl text-white cursor-pointer hover:scale-110 hover:text-blue-500 hover:-rotate-12 transition-all duration-300 ease-in-out'></BiLogoLinkedin>
+                  </a>
 
-                  <BiLogoGmail className='text-2xl md:text-3xl text-white cursor-pointer hover:scale-110 hover:text-red-500 hover:rotate-12 transition-all duration-300 ease-in-out'></BiLogoGmail>
+                  <a href="mailto:ankurvr988@gmail.com" target='_blank' rel='noopener noreferrer'>
+                    <BiLogoGmail className='text-2xl md:text-3xl text-white cursor-pointer hover:scale-110 hover:text-red-500 hover:rotate-12 transition-all duration-300 ease-in-out'></BiLogoGmail>
+                  </a>
                   
                 </div>
             </motion.div>
 
-            <img src="dp.jpg" alt="" className='w-[300px] md:w-[400px] rounded-full hover:shadow-2xl hover:shadow-blue-800 hover:scale-105 hover:rotate-2 transition-all duration-500'/>
+            <img src="dp.jpg" alt="" className='w-[250px] sm:w-[300px] md:w-[400px] rounded-full hover:shadow-2xl hover:shadow-blue-800 hover:scale-105 hover:rotate-2 transition-all duration-500'/>
 
         </motion.div>
     </div>
