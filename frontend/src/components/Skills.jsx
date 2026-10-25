@@ -3,12 +3,14 @@ import { motion } from 'framer-motion';
 import Marquee from 'react-fast-marquee';
 import 'devicon/devicon.min.css';
 
-
-//     !! remove the skill repetition when adding more skills !!
 const frontendSkills = [
   {
     name: 'React',
     icon: 'devicon-react-original colored',
+  },
+  {
+    name: 'Next',
+    icon: 'devicon-nextjs-plain',
   },
   {
     name: 'JavaScript',
@@ -48,6 +50,14 @@ const backendSkills = [
   {
     name: 'MongoDB',
     icon: 'devicon-mongodb-plain colored',
+  },
+  {
+    name: 'PostgreSQL',
+    icon: 'devicon-postgresql-plain colored',
+  },
+  {
+    name: 'Supabase',
+    icon: 'devicon-supabase-plain colored',
   },
   {
     name: 'Java',
